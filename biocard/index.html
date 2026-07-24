@@ -9,21 +9,19 @@
       content="广州启蒙军 BioCard Archive，浏览 55 张社群纪念卡牌。"
     />
     <title>Guangzhou Enlightened · BioCard Archive</title>
-    <script type="module" crossorigin src="./assets/index-DOC1TouI.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-Cv2R5Jeo.css">
+    <script type="module" crossorigin src="./assets/index-CkU8Ivx0.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-Cuywo5-Q.css">
   </head>
   <body>
-    <main class="viewer-shell" aria-label="广州启蒙军 BioCard 三维展示">
+    <main class="viewer-shell">
       <canvas
         id="viewer-canvas"
         tabindex="0"
-        aria-label="可旋转并浏览 55 张扑克牌的三维模型"
       ></canvas>
 
       <section
         id="home-overlay"
         class="home-overlay"
-        aria-label="广州启蒙军 BioCard Archive"
         aria-hidden="true"
       >
         <div class="home-frame" aria-hidden="true"></div>
@@ -43,17 +41,12 @@
 
         <div class="home-actions">
           <button id="open-box-button" class="open-box-button" type="button" disabled>
-            <i data-lucide="package-open" aria-hidden="true"></i>
-            <span>开启牌组</span>
+            开启牌组
           </button>
-          <p class="drag-hint">
-            <i data-lucide="rotate-cw" aria-hidden="true"></i>
-            <span>拖拽查看</span>
-          </p>
         </div>
       </section>
 
-      <section id="card-info" class="card-info" aria-label="当前卡牌" hidden>
+      <section id="card-info" class="card-info" hidden>
         <p id="card-label" class="card-label" aria-live="polite">01 / 55</p>
       </section>
 
