@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#e5e9ec" />
+    <meta
+      name="description"
+      content="广州启蒙军 BioCard Archive，浏览 55 张社群纪念卡牌。"
+    />
+    <title>Guangzhou Enlightened · BioCard Archive</title>
+    <script type="module" crossorigin src="./assets/index-CQHb5r5T.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-D95rUWXa.css">
+  </head>
+  <body>
+    <main class="viewer-shell" aria-label="广州启蒙军 BioCard 三维展示">
+      <canvas
+        id="viewer-canvas"
+        tabindex="0"
+        aria-label="可旋转并浏览 55 张扑克牌的三维模型"
+      ></canvas>
+
+      <section
+        id="home-overlay"
+        class="home-overlay"
+        aria-label="广州启蒙军 BioCard Archive"
+        aria-hidden="true"
+      >
+        <div class="home-frame" aria-hidden="true"></div>
+
+        <header class="brand-lockup">
+          <img
+            class="brand-logo"
+            src="./brand/gz-enl-monochrome.svg"
+            alt="广州启蒙军"
+          />
+          <span class="brand-divider" aria-hidden="true"></span>
+          <span class="brand-copy">
+            <strong>GUANGZHOU ENLIGHTENED</strong>
+            <small>BIOCARD ARCHIVE · 55 CARDS</small>
+          </span>
+        </header>
+
+        <div class="home-actions">
+          <button id="open-box-button" class="open-box-button" type="button" disabled>
+            <i data-lucide="package-open" aria-hidden="true"></i>
+            <span>开启牌组</span>
+          </button>
+          <p class="drag-hint">
+            <i data-lucide="rotate-cw" aria-hidden="true"></i>
+            <span>拖拽查看</span>
+          </p>
+        </div>
+      </section>
+
+      <section id="card-info" class="card-info" aria-label="当前卡牌" hidden>
+        <p id="card-label" class="card-label" aria-live="polite">01 / 55</p>
+      </section>
+
+      <p id="render-error" class="render-error" role="alert" hidden>
+        当前浏览器无法使用 WebGL 2，请更换现代浏览器后重试。
+      </p>
+    </main>
+  </body>
+</html>
